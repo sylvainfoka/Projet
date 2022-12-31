@@ -1,14 +1,8 @@
 
 name: Lint Code Base
 
-#############################
-# Start the job on all push #
-#############################
 on:
-  workflow_dispatch:
-  push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
+
   pull_request:
     branches: [master, main]
 
@@ -26,9 +20,8 @@ jobs:
     # Load all steps #
     ##################
     steps:
-      ##########################
-      # Checkout the code base #
-      ##########################
+     
+      # Checkout the code base 
       - name: Checkout Code
         uses: actions/checkout@v3
         with:

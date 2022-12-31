@@ -20,4 +20,4 @@ jobs:
       - name: Display Go version
         run: go version
       - name: Test with the Go CLI    
-        run: go test
+        run: go test ./...
